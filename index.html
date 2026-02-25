@@ -1,59 +1,529 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-        name="description"
-        content="Manoel Vinicius - Student. Portifolio with web & mobile projects" />
-        <title>Manoel Vinicius | Student</title>
-        <link rel="stylesheet" href="assets/css/style.css" />
-    </head>
+<html lang="en"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Manoel Vinicius — Student. Portfolio with web & mobile projects"
+    />
+    <title>Manoel Vinicius | Student</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
     <body>
-        <a class="skip=link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-        <header class="site-header" data-header>
-            <div class="container header-inner">
-                <a class="brand" href="#top" aria-label="Go to top">
-                    <span class="brand-dot" aria-hidden="true"></span>
-                    <span class="brand-text">Manoel Vinicius</span>
-                </a>
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Go to top">
+          <span class="brand-dot" aria-hidden="true"></span>
+          <span class="brand-text">Manoel Vinicius</span>
+        </a>
 
-                <nav class="nav" aria-label="Primary">
-                    <button
-                    class="nav-toggle"
-                    type="button"
-                    aria-expanded="false"
-                    aria-controls="primaryNav"
-                    data-nav-toggle
-                    >
-                    <span class="sr-only" data-i18="ally.menu">Open menu</span>
-                    <span class="hamburger" aria-hidden="true"></span>
-                    </button>
+        <nav class="nav" aria-label="Primary">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primaryNav"
+            data-nav-toggle
+          >
+            <span class="sr-only" data-i18n="a11y.menu">Open menu</span>
+            <span class="hamburger" aria-hidden="true"></span>
+          </button>
 
+          <ul id="primaryNav" class="nav-list" data-nav-list>
+            <li><a class="nav-link" href="#about" data-nav-link data-i18n="nav.about">About</a></li>
+            <li><a class="nav-link" href="#skills" data-nav-link data-i18n="nav.skills">Skills</a></li>
+            <li><a class="nav-link" href="#projects" data-nav-link data-i18n="nav.projects">Projects</a></li>
+            <li><a class="nav-link" href="#contact" data-nav-link data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </nav>
 
-                    <ul id="primaryNav" class="nav-list" data-nav-list>
-                        <li><a class="nav-link" href="#about" data-nav-link data i18="nav.about">About</a></li>
-                        <li><a class="nav-link" href="#skills" data-nav-link data i18="nav.skills">Skills</a></li>
-                        <li><a class="nav-link" href="#projects" data-nav-link data i18="nav.projects">Projects</a></li>
-                        <li><a class="nav-link" href="#contact" data-nav-link data i18="nav.contact">Contact</a></li>
-                    </ul>
-                </nav>
+        <div class="header-actions">
+          <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch language">
+            <span class="lang-pill" aria-hidden="true">EN</span>
+            <span class="lang-pill" aria-hidden="true">PT</span>
+            <span class="lang-indicator" data-lang-indicator aria-hidden="true"></span>
+            <span class="sr-only" data-i18n="a11y.language">Switch language</span>
+          </button>
 
-                
-                <div class="header-actions">
-                    <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch language"> 
-                        <span class="lang-pill" aria-hidden="true">EN</span>
-                        <span class="lang-pill" aria-hidden="true">PT</span>
-                        <span class="lang-indicator" data-lang-indicator aria-hidden="true"></span>
-                        <span class="sr-only" data-i18="ally.language">Switch language</span>
-                    </button>
+          <a class="btn btn-primary" href="#projects" data-i18n="cta.viewProjects">View Projects</a>
+        </div>
+      </div>
+    </header>
+     <main id="main">
+      <section id="top" class="hero section" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="kicker" data-i18n="hero.kicker">Student</p>
+            <h1 id="hero-title" class="hero-title">
+              <span class="hero-name">Manoel Vinicius</span>
+              <span class="hero-role" data-i18n="hero.role">Student</span>
+            </h1>
 
+            <p class="hero-subtitle" data-i18n="hero.subtitle">
+              I build fast, accessible web & mobile products with a pragmatic engineering mindset.
+            </p>
 
-                    <a class="btn btn-primary" href="projects" data-i18="cta.viewProjects">View Projects</a>
-                </div>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#projects" data-i18n="cta.viewProjects">View Projects</a>
+              <a class="btn btn-ghost" href="#contact" data-i18n="cta.contact">Contact</a>
             </div>
-        </header>
-     
+
+            <ul class="social" aria-label="Social links">
+              <li>
+                <a class="social-link" href="https://github.com/Vinicius-devsis" target="_blank" rel="noreferrer" aria-label="GitHub (replace link)">
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a class="social-link" href="#" target="_blank" rel="noreferrer" aria-label="LinkedIn (replace link)">
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a class="social-link" href="manoelviniciusc162@gmail.com" aria-label="Go to contact section">
+                  Email
+                </a>
+              </li>
+            </ul>
+
+            <p class="hero-note" data-i18n="hero.note">
+              Based on modern JavaScript, React, React Native, Flutter, and Python APIs.
+            </p>
+          </div>
+
+          <div class="hero-card" role="region" aria-label="Highlights">
+            <div class="stat-grid">
+              <div class="stat">
+                <div class="stat-label" data-i18n="hero.highlight1Label">Focus</div>
+                <div class="stat-value" data-i18n="hero.highlight1Value">Web + Mobile</div>
+              </div>
+              <div class="stat">
+                <div class="stat-label" data-i18n="hero.highlight2Label">Strengths</div>
+                <div class="stat-value" data-i18n="hero.highlight2Value">UX, performance, accessibility</div>
+              </div>
+              <div class="stat">
+                <div class="stat-label" data-i18n="hero.highlight3Label">Backend</div>
+                <div class="stat-value" data-i18n="hero.highlight3Value">Django, Flask, FastAPI</div>
+              </div>
+            </div>
+
+            <div class="callout">
+              <p class="callout-title" data-i18n="hero.calloutTitle">Open to opportunities</p>
+              <p class="callout-body" data-i18n="hero.calloutBody">
+                If you have a product to ship or a system to modernize, let’s talk.
+              </p>
+              <a class="btn btn-accent" href="#contact" data-i18n="cta.letTalk">Let’s talk</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="section" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="about-title" class="section-title" data-i18n="about.title">About Me</h2>
+            <p class="section-desc" data-i18n="about.desc">
+              Short, credible overview—easy to replace with your exact bio.
+            </p>
+          </div>
+
+          <div class="content-grid">
+            <!-- Avatar placeholder -->
+            <figure class="card about-avatar">
+              <div class="avatar-frame" aria-hidden="false">
+                
+                  <img class="avatar-img" src="assets/images/avatar.png" alt="Avatar of Manoel Vinicius" />
+                
+                <svg class="avatar-svg" viewBox="0 0 120 120" aria-hidden="false">
+                  <defs>
+                    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="currentColor" stop-opacity="0.7"></stop>
+                      <stop offset="1" stop-color="currentColor" stop-opacity="0.25"></stop>
+                    </linearGradient>
+                  </defs>
+                  
+                  <path
+                    d="M28 98c8-18 22-26 32-26s24 8 32 26"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-opacity="0.35"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <!-- <figcaption class="muted small" data-i18n="about.avatarHint">Add your avatar image here.</figcaption> -->
+            </figure>
+
+            <div class="prose">
+              <p data-i18n="about.p1">
+                I’m a Student focused on building reliable web and mobile experiences. I care about clean UI,
+                accessible components, and performance that holds up on real devices.
+              </p>
+              <p data-i18n="about.p2">
+                I’ve worked across product surfaces—from marketplace flows to operational dashboards—shipping features
+                end-to-end with thoughtful UX and maintainable code.
+              </p>
+            </div>
+
+            <aside class="panel" aria-label="Quick facts">
+              <ul class="checklist">
+                <li data-i18n="about.b1">Mobile-first UI with real-world constraints</li>
+                <li data-i18n="about.b2">APIs and integrations with Python backends</li>
+                <li data-i18n="about.b3">Design systems: consistent, reusable components</li>
+                <li data-i18n="about.b4">Accessibility: keyboard + screen reader friendly</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="section" aria-labelledby="skills-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="skills-title" class="section-title" data-i18n="skills.title">Skills</h2>
+            <p class="section-desc" data-i18n="skills.desc">
+              Web + mobile development with practical backend experience.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <article class="card">
+              <h3 class="card-title" data-i18n="skills.webTitle">Web</h3>
+              <ul class="chips chips-icons" aria-label="Web skills">
+                <li class="chip chip-icon" data-tech="html">
+                  <span class="icon icon-badge" aria-hidden="true">HTML</span>
+                  <span>HTML</span>
+                </li>
+                <li class="chip chip-icon" data-tech="css">
+                  <span class="icon icon-badge" aria-hidden="true">CSS</span>
+                  <span>CSS</span>
+                </li>
+                <li class="chip chip-icon" data-tech="js">
+                  <span class="icon icon-badge" aria-hidden="true">JS</span>
+                  <span>JavaScript</span>
+                </li>
+                <li class="chip chip-icon" data-tech="react">
+                  <span class="icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" class="icon-svg" aria-hidden="true">
+                      <circle cx="12" cy="12" r="1.8" fill="currentColor"></circle>
+                      <ellipse cx="12" cy="12" rx="9" ry="3.5" fill="none" stroke="currentColor" stroke-width="1.6"></ellipse>
+                      <ellipse cx="12" cy="12" rx="9" ry="3.5" fill="none" stroke="currentColor" stroke-width="1.6" transform="rotate(60 12 12)"></ellipse>
+                      <ellipse cx="12" cy="12" rx="9" ry="3.5" fill="none" stroke="currentColor" stroke-width="1.6" transform="rotate(120 12 12)"></ellipse>
+                    </svg>
+                  </span>
+                  <span>React</span>
+                </li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title" data-i18n="skills.mobileTitle">Mobile</h3>
+              <ul class="chips chips-icons" aria-label="Mobile skills">
+                <li class="chip chip-icon" data-tech="rn">
+                  <span class="icon icon-badge" aria-hidden="true">RN</span>
+                  <span>React Native</span>
+                </li>
+                <li class="chip chip-icon" data-tech="flutter">
+                  <span class="icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" class="icon-svg" aria-hidden="true">
+                      <path d="M5 13.5 14.5 4l4 0-9.6 9.6z" fill="currentColor" opacity="0.9"></path>
+                      <path d="M5 18.5l6.2-6.2 3.1 3.1L8.1 21.6 5 21.6z" fill="currentColor" opacity="0.55"></path>
+                      <path d="M11.2 12.3 14.4 9.1 19 13.7 15.9 16.8z" fill="currentColor" opacity="0.75"></path>
+                    </svg>
+                  </span>
+                  <span>Flutter</span>
+                </li>
+              </ul>
+            </article>
+            
+            <article class="card">
+              <h3 class="card-title" data-i18n="skills.backendTitle">Backend</h3>
+              <ul class="chips chips-icons" aria-label="Backend skills">
+                <li class="chip chip-icon" data-tech="python">
+                  <span class="icon icon-badge" aria-hidden="true">PY</span>
+                  <span>Python</span>
+                </li>
+                <li class="chip chip-icon" data-tech="django">
+                  <span class="icon icon-badge" aria-hidden="true">DJ</span>
+                  <span>Django</span>
+                </li>
+                <li class="chip chip-icon" data-tech="flask">
+                  <span class="icon icon-badge" aria-hidden="true">FL</span>
+                  <span>Flask</span>
+                </li>
+                <li class="chip chip-icon" data-tech="fastapi">
+                  <span class="icon icon-badge" aria-hidden="true">FA</span>
+                  <span>FastAPI</span>
+                </li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title" data-i18n="skills.focusTitle">What I optimize for</h3>
+              <ul class="chips" aria-label="Engineering focus">
+                <li class="chip" data-i18n="skills.f1">Accessibility</li>
+                <li class="chip" data-i18n="skills.f2">Performance</li>
+                <li class="chip" data-i18n="skills.f3">Maintainability</li>
+                <li class="chip" data-i18n="skills.f4">Clear UX</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="projects-title" class="section-title" data-i18n="projects.title">Projects</h2>
+            <p class="section-desc" data-i18n="projects.desc">
+              
+            </p>
+          </div>
+          <div class="projects-grid">
+            <article class="card project-card">
+              <div class="project-media" aria-hidden="true">
+                  <img class="project-img" src="assets/images/project1.png" alt="Screenshot of the Gym & Trainer App" />
+                <svg class="project-media-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4 6.5h16a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    opacity="0.6"
+                  />
+                  <path d="M7 14.5l3-3 2.5 2.5 3-3 2.5 2.5" fill="none" stroke="currentColor" stroke-width="1.6" opacity="0.8" />
+                  <circle cx="8.2" cy="9.8" r="1.2" fill="currentColor" opacity="0.7"></circle>
+                </svg>
+              </div>
+
+              <div class="project-top">
+                <h3 class="card-title" data-i18n="projects.p1.title">Gym & Trainer App</h3>
+                <p class="muted" data-i18n="projects.p1.subtitle">Mobile experience for workouts, plans, and coaching.</p>
+              </div>
+
+              <p class="project-desc" data-i18n="projects.p1.desc">
+                App focused on training routines, scheduling, and trainer-client communication with a clean, fast UI.
+              </p>
+
+              <ul class="project-points" aria-label="Project highlights">
+                <li data-i18n="projects.p1.point1">Workout plans, progress tracking, and session scheduling</li>
+                <li data-i18n="projects.p1.point2">Offline-friendly screens and optimized list rendering</li>
+                <li data-i18n="projects.p1.point3">API-ready architecture for scalable features</li>
+              </ul>
+
+              <ul class="chips" aria-label="Technologies used">
+                <li class="chip">React Native</li>
+                <li class="chip">FastAPI</li>
+                <li class="chip">REST</li>
+              </ul>
+
+              <div class="project-links">
+                <a class="link" href="#" target="_blank" rel="noreferrer" aria-label="Gym app GitHub (replace link)">GitHub</a>
+                <a class="link" href="#" target="_blank" rel="noreferrer" aria-label="Gym app Live demo (replace link)">Live</a>
+              </div>
+            </article>
+
+            <article class="card project-card">
+              <div class="project-media" aria-hidden="true">
+                
+                  <img class="project-img" src="assets/images/project6.png" alt="Screenshot of the Marketplace Web Platform" />
+                
+                <svg class="project-media-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4 6.5h16a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    opacity="0.6"
+                  />
+                  <path d="M6.5 16V9.8h4.2V16" fill="none" stroke="currentColor" stroke-width="1.6" opacity="0.75" />
+                  <path d="M13.3 16V8.6h4.2V16" fill="none" stroke="currentColor" stroke-width="1.6" opacity="0.75" />
+                </svg>
+              </div>
+
+              <div class="project-top">
+                <h3 class="card-title" data-i18n="projects.p2.title">Marketplace Web Platform</h3>
+                <p class="muted" data-i18n="projects.p2.subtitle">Modern storefront + admin tools.</p>
+              </div>
+
+              <p class="project-desc" data-i18n="projects.p2.desc">
+                Web marketplace with product discovery, cart flow, and admin management designed for clarity and speed.
+              </p>
+
+              <ul class="project-points" aria-label="Project highlights">
+                <li data-i18n="projects.p2.point1">Search/filter UX with responsive product cards</li>
+                <li data-i18n="projects.p2.point2">Accessible forms and error states across checkout</li>
+                <li data-i18n="projects.p2.point3">Role-based admin pages for inventory and orders</li>
+              </ul>
+
+              <ul class="chips" aria-label="Technologies used">
+                <li class="chip">React</li>
+                <li class="chip">Django</li>
+                <li class="chip">PostgreSQL</li>
+              </ul>
+
+              <div class="project-links">
+                <a class="link" href="#" target="_blank" rel="noreferrer" aria-label="Marketplace GitHub (replace link)">GitHub</a>
+                <a class="link" href="#" target="_blank" rel="noreferrer" aria-label="Marketplace Live demo (replace link)">Live</a>
+              </div>
+            </article>
+
+            <article class="card project-card">
+              <div class="project-media" aria-hidden="true">
+                  <img class="project-img" src="assets/images/project2.png" alt="Screenshot of the Hospital Management System" />
+                <svg class="project-media-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4 6.5h16a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    opacity="0.6"
+                  />
+                  <path d="M12 9v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity="0.85" />
+                  <path d="M9 12h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity="0.85" />
+                </svg>
+              </div>
+
+              <div class="project-top">
+                <h3 class="card-title" data-i18n="projects.p3.title">Hospital Management System</h3>
+                <p class="muted" data-i18n="projects.p3.subtitle">Operational workflows with secure access.</p>
+              </div>
+
+              <p class="project-desc" data-i18n="projects.p3.desc">
+                System for scheduling, patient records, and internal operations with a focus on clarity and reliability.
+              </p>
+
+              <ul class="project-points" aria-label="Project highlights">
+                <li data-i18n="projects.p3.point1">Dashboards for appointments, triage, and staff workflows</li>
+                <li data-i18n="projects.p3.point2">Permission-aware UI patterns for safer operations</li>
+                <li data-i18n="projects.p3.point3">API-driven data flow designed for auditability</li>
+              </ul>
+
+              <ul class="chips" aria-label="Technologies used">
+                <li class="chip">Flutter</li>
+                <li class="chip">Flask</li>
+                <li class="chip">JWT</li>
+              </ul>
+
+              <div class="project-links">
+                <a class="link" href="#" target="_blank" rel="noreferrer" aria-label="Hospital system GitHub (replace link)">GitHub</a>
+                <a class="link" href="#" target="_blank" rel="noreferrer" aria-label="Hospital system Live demo (replace link)">Live</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="projects-cta">
+            <a class="btn btn-primary" href="#contact" data-i18n="cta.contact">Contact</a>
+            <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer" aria-label="View more on GitHub (replace link)">
+              <span data-i18n="cta.moreOnGithub">More on GitHub</span>
+            </a>
+          </div>
+        </div>
+      </section>
+       <section id="contact" class="section" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="contact-title" class="section-title" data-i18n="contact.title">Contact</h2>
+            <p class="section-desc" data-i18n="contact.desc">
+              Send a message—this form validates on the front end and is ready to wire to a backend.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="panel">
+              <h3 class="panel-title" data-i18n="contact.quickTitle">Quick links</h3>
+              <ul class="contact-list">
+                <li>
+                  <span class="muted" data-i18n="contact.emailLabel">Email</span>
+                  <a class="link" href="mailto:manoelviniciusc162@gmail.com">manoelviniciusc162@gmail.com</a>
+                </li>
+                <li>
+                  <span class="muted">GitHub</span>
+                  <a class="link" href="https://github.com/Vinicius-devsis" target="_blank" rel="noreferrer" aria-label="GitHub profile (replace link)">
+                    https://github.com/Vinicius-devsis
+                  </a>
+                </li>
+                <li>
+                  <span class="muted">LinkedIn</span>
+                  <a class="link" href="#" target="_blank" rel="noreferrer" aria-label="LinkedIn profile (replace link)">
+                    linkedin.com/in/your-handle
+                  </a>
+                </li>
+              </ul>
+
+              <p class="small muted" data-i18n="contact.note">
+                Tip: replace the placeholders above with your real links.
+              </p>
+            </div>
+
+            <form class="card form" novalidate data-contact-form>
+              <div class="form-row">
+                <label for="name" data-i18n="form.name">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                  minlength="2"
+                  data-i18n-placeholder="form.namePh"
+                  placeholder="Your name"
+                />
+                <p class="form-error" id="nameError" aria-live="polite"></p>
+              </div>
+
+              <div class="form-row">
+                <label for="email" data-i18n="form.email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  data-i18n-placeholder="form.emailPh"
+                  placeholder="you@domain.com"
+                />
+                <p class="form-error" id="emailError" aria-live="polite"></p>
+              </div>
+
+              <div class="form-row">
+                <label for="message" data-i18n="form.message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  minlength="10"
+                  data-i18n-placeholder="form.messagePh"
+                  placeholder="Tell me what you’re building (or what you need help with)."
+                ></textarea>
+                <p class="form-error" id="messageError" aria-live="polite"></p>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-accent" type="submit" data-i18n="form.send">Send</button>
+                <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="muted small">
+          <span data-i18n="footer.built">Built with semantic HTML, CSS, and vanilla JavaScript.</span>
+        </p>
+        <a class="link small" href="#top" data-i18n="footer.top">Back to top</a>
+      </div>
+    </footer>
+
+    <noscript>
+      <div class="noscript container">
+        This site works best with JavaScript enabled (for the language toggle and form validation).
+      </div>
+    </noscript>
+
+    <script defer src="assets/js/main.js"></script>
     </body>
 </html>
