@@ -136,7 +136,7 @@ const translations = {
       desc: 'Send a message—this form validates on the front end and is ready to wire to a backend.',
       quickTitle: 'Quick links',
       emailLabel: 'Email',
-      note: 'Tip: replace the placeholders above with your real links.',
+
     },
     form: {
       name: 'Name',
